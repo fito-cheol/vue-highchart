@@ -9,6 +9,9 @@ import Highcharts from "highcharts";
 import Stock from "highcharts/modules/stock";
 import Pareto from "highcharts/modules/pareto";
 import Maps from "highcharts/modules/map";
+import highchartsMore from 'highcharts/highcharts-more'
+
+highchartsMore(Highcharts)
 Pareto(Highcharts);
 Maps(Highcharts);
 Stock(Highcharts);

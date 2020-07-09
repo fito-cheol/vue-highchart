@@ -6,6 +6,7 @@
     <chart-logarithmic/>
     <chart-stock-responsive/>
     <chart-pareto />
+    <chart-spiderweb />
   </div>
 </template>
 
