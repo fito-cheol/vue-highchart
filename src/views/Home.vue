@@ -5,6 +5,7 @@
     <chart-line/>
     <chart-logarithmic/>
     <chart-stock-responsive/>
+    <chart-pareto />
   </div>
 </template>
 
