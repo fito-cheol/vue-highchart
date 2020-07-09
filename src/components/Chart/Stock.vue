@@ -5,6 +5,7 @@
 </template>
 
 <script>
+// https://jsfiddle.net/gh/get/jquery/1.7.2/highslide-software/highcharts.com/tree/master/samples/stock/demo/basic-line/
 export default {
   data() {
     return {

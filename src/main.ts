@@ -7,6 +7,8 @@ import "./components";
 import HighchartsVue from "highcharts-vue";
 import Highcharts from "highcharts";
 import Stock from "highcharts/modules/stock";
+import Maps from "highcharts/modules/map";
+Maps(Highcharts);
 Stock(Highcharts);
 Vue.use(HighchartsVue);
 
