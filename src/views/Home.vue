@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <chart-event/>
     <chart-dot />
     <chart-stock/>
     <chart-line/>
@@ -7,6 +8,7 @@
     <chart-stock-responsive/>
     <chart-pareto />
     <chart-spiderweb />
+    
   </div>
 </template>
 
