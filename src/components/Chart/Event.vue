@@ -1,45 +1,92 @@
-
-
 <template>
-  <div>p
+  <div>
+    p
     <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
   </div>
 </template>
 
 <script>
-import Highcharts from 'highcharts'
 // https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/synchronized-charts
 export default {
   data() {
-    return {
-    };
+    return {};
   },
   computed: {
-    chartOptions(){
+    chartOptions() {
       return {
         chart: {
-          zoomType: 'x',
+          zoomType: "x",
           events: {
             load: function() {
-              console.log('load')
+              console.log("load");
             },
             click: this.logger,
             selection: function() {
-              return false
+              return false;
             }
           }
         },
 
-        series: [{
-          data: [29, 71, 106, 129, 144, 176, 135, 148, 216, 194, 95, 54, 42, 66, 32, 132, 54, 233, 42, 99, 34, 23, 29, 71, 106, 129, 144, 176, 135, 148, 216, 194, 95, 54, 42, 66, 32, 132, 54, 233, 42, 99, 34, 23]
-        }]
-      }
+        series: [
+          {
+            data: [
+              29,
+              71,
+              106,
+              129,
+              144,
+              176,
+              135,
+              148,
+              216,
+              194,
+              95,
+              54,
+              42,
+              66,
+              32,
+              132,
+              54,
+              233,
+              42,
+              99,
+              34,
+              23,
+              29,
+              71,
+              106,
+              129,
+              144,
+              176,
+              135,
+              148,
+              216,
+              194,
+              95,
+              54,
+              42,
+              66,
+              32,
+              132,
+              54,
+              233,
+              42,
+              99,
+              34,
+              23
+            ],
+            events: {
+              click: this.logger
+            }
+          }
+        ]
+      };
     }
   },
   methods: {
-    logger(e){
-      console.log('logger', e)
+    logger(e) {
+      console.log("logger", e);
     }
-  },
+  }
 };
 </script>

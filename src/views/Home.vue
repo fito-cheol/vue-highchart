@@ -1,14 +1,13 @@
 <template>
   <div class="home">
-    <chart-event/>
+    <chart-event />
     <chart-dot />
-    <chart-stock/>
-    <chart-line/>
-    <chart-logarithmic/>
-    <chart-stock-responsive/>
+    <chart-stock />
+    <chart-line />
+    <chart-logarithmic />
+    <chart-stock-responsive />
     <chart-pareto />
     <chart-spiderweb />
-    
   </div>
 </template>
 
@@ -17,9 +16,6 @@
 
 export default {
   name: "Home",
-  components: {
-  }
+  components: {}
 };
 </script>
-
-
