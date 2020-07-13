@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1> Dot Chart </h1>
     <highcharts :options="chartOptions"></highcharts>
   </div>
 </template>

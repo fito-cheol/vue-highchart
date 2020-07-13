@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <chart-event />
     <chart-dot />
     <chart-stock />
     <chart-line />

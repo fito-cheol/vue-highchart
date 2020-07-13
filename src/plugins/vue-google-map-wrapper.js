@@ -1,4 +1,4 @@
-import googleMapFactory from '@/components/map'
+import googleMapFactory from "@/components/map"
 
 function install(Vue, options) {
   const {

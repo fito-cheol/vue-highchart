@@ -1,12 +1,14 @@
 <template>
-  <div>
-    p
+  <div v-on:mousemove="handleMouseEvent">
+    <h1>Mouse Event</h1>
     <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
   </div>
 </template>
 
 <script>
 // https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/synchronized-charts
+// http://jsfiddle.net/sivaecekrr/qpg7a9en/
+
 export default {
   data() {
     return {};
@@ -79,13 +81,22 @@ export default {
               click: this.logger
             }
           }
-        ]
+        ],
       };
     }
   },
   methods: {
     logger(e) {
       console.log("logger", e);
+    },
+    handleMouseEvent(e) {
+      console.log("MouseEvent", e, e.x, e.y);
+      const chart = this.$refs.chart.chart
+      const event = chart.pointer.normalize(e);
+      const point = chart.series[0].searchPoint(event, true);
+      if (point){
+        console.log(point.x, point.y)
+      }
     }
   }
 };
