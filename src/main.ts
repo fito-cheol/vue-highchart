@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./components";
-import vueGoogleMapWrapper from "./plugins/vue-google-map-wrapper.js";
+import vueGoogleMapWrapper from "./plugins";
 
 import HighchartsVue from "highcharts-vue";
 import Highcharts from "highcharts";
