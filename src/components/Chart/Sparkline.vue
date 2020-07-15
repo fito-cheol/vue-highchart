@@ -6,7 +6,8 @@
 export default {
     props:{
         'data-spakline':{
-            default: '1, 2, 3, -4 '
+            type:Array,
+            default: () => [1,2,3,4]
         }, 
         'chart-type':{
             // column이 들어올 수 있음
