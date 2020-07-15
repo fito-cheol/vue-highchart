@@ -16,7 +16,7 @@
             <th>Alabama</th>
             <td>254</td>
             <td>
-              <chart-sparkline :data-sparkline="[71, 78, 39, 66]" />
+              <chart-sparkline-render :dataSparkline="[71, 78, 39, 66]" />
             </td>
             <td>296</td>
             <td>
@@ -24,7 +24,7 @@
             </td>
             <td>-42</td>
             <td>
-              <chart-sparkline :data-sparkline="[68, 52, 80, 96]" chart-type="column" />
+              <chart-sparkline-render :dataSparkline="[68, -52, 80, -96]" chart-type="column" />
             </td>
         </tr>
     </tbody>

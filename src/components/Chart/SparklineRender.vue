@@ -3,7 +3,7 @@
   export default{
     name: 'reder-chart',
     props:{
-        'dataSpakline':{
+        'dataSparkline':{
           type:Array,
           default: () => [1,2,3,4]
         },
@@ -17,7 +17,7 @@
     render(createElement){
       const chartOptions = {
                   series: [{
-                      data: this.dataSpakline,
+                      data: this.dataSparkline,
                       pointStart: 1
                   }],
                   chart: {
