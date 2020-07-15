@@ -64,7 +64,6 @@ export default {
     axios.get('https://demo-live-data.highcharts.com/aapl-c.json')
       .then(response => {
         this.chartOptions.series[0].data = response.data
-        console.log(response.data.length, response.data[0])
       })
   },
   

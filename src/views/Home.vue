@@ -7,6 +7,7 @@
     <chart-stock-responsive />
     <chart-pareto />
     <chart-spiderweb />
+    <chart-sparkline-table />
   </div>
 </template>
 
