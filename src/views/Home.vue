@@ -8,6 +8,7 @@
     <chart-pareto />
     <chart-spiderweb />
     <chart-sparkline-table />
+    <chart-arearange />
   </div>
 </template>
 
