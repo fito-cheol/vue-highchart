@@ -9,6 +9,7 @@
     <chart-spiderweb />
     <chart-sparkline-table />
     <chart-arearange />
+    <chart-flag-placement />
   </div>
 </template>
 
