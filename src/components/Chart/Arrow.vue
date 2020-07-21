@@ -1,7 +1,7 @@
 <template>
   <div>
     <highcharts :options="chartOptions"></highcharts>
-    <canvas-arrow></canvas-arrow>
+    
   </div>
 </template>
 

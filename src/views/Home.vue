@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <v2-heatmap1 />
     <chart-arrow />
     <chart-dot />
     <chart-stock />
