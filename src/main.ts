@@ -9,13 +9,16 @@ import HighchartsVue from "highcharts-vue";
 import Highcharts from "highcharts";
 import Stock from "highcharts/modules/stock";
 import Pareto from "highcharts/modules/pareto";
+import variablepie from "highcharts/modules/variable-pie";
 import Maps from "highcharts/modules/map";
 import highchartsMore from "highcharts/highcharts-more";
 
+Stock(Highcharts);
 highchartsMore(Highcharts);
 Pareto(Highcharts);
+variablepie(Highcharts);
 Maps(Highcharts);
-Stock(Highcharts);
+
 Vue.use(HighchartsVue);
 
 Vue.use(vueGoogleMapWrapper, {
