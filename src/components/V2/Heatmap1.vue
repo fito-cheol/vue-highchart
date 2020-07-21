@@ -20,7 +20,7 @@ export default {
                 marginTop: 40,
                 marginBottom: 80,
                 plotBorderWidth: 1,
-                plotBackgroundImage: "https://ohcoach.com/common/images/court.png",
+                plotBackgroundImage: "https://juhee100bucket.s3.ap-northeast-2.amazonaws.com/court_background_black.png",
                 height: 600
             },
 
