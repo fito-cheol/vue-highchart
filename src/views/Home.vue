@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <v2-area />
     <v2-candle-stick />
     <v2-heatmap1 />
     <chart-arrow />
