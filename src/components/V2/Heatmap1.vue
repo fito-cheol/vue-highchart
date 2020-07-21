@@ -30,8 +30,6 @@ export default {
 
             xAxis: {
                 categories: ['디펜딩 서드', '', '미들서드', '', '파이널 서드', ''],
-
-
             },
 
             yAxis: {
