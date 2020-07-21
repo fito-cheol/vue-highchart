@@ -81,11 +81,12 @@ export default {
                 data: [[0, 0, 10], [0, 1, 19], [0, 2, 8], [1, 0, 92], [1, 1, 58], [1, 2, 78], [2, 0, 35], [2, 1, 15], [2, 2, 123], [3, 0, 72], [3, 1, 132], [3, 2, 114], [4, 0, 38], [4, 1, 5], [4, 2, 8], [5, 0, 88], [5, 1, 32], [5, 2, 12]],
                 dataLabels: {
                     enabled: true,
-                    color: '#ffaaff',
+                    color: '#ffffff',
                     formatter: function () {
                         // https://stackoverflow.com/questions/24708198/how-to-format-highcharts-datalabels-decimal-points
                         // https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting
-                        return parseFloat(this.y.toFixed(2)).toLocaleString()+"%";
+                        console.log(this)
+                        return parseFloat(this.point.value).toLocaleString()+"%";
                     }
                 }
             }],
