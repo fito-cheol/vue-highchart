@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <v2-paired-column />
     <v2-donut />
     <v2-stacked />
     <v2-area />
