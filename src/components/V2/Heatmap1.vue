@@ -10,6 +10,14 @@
 // 투명도 -> https://stackoverflow.com/questions/43462250/highcharts-heatmap-points-with-transparency-depending-on-value
 // 사이즈 이해 -> https://www.highcharts.com/docs/chart-design-and-style/design-and-style
 import Highcharts from 'highcharts';
+
+function getPointCategoryName(point, dimension) {
+    var series = point.series,
+        isY = dimension === 'y',
+        axis = series[isY ? 'yAxis' : 'xAxis'];
+    return axis.categories[point[isY ? 'y' : 'x']];
+}
+
 export default {
   data() {
     return {
@@ -20,7 +28,7 @@ export default {
                 marginTop: 40,
                 marginBottom: 80,
                 plotBorderWidth: 1,
-                plotBackgroundImage: "https://ohcoach.com/common/images/court.png",
+                plotBackgroundImage: "https://juhee100bucket.s3.ap-northeast-2.amazonaws.com/court_background_black.png",
                 height: 600
             },
 
@@ -83,7 +91,6 @@ export default {
                     formatter: function () {
                         // https://stackoverflow.com/questions/24708198/how-to-format-highcharts-datalabels-decimal-points
                         // https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting
-                        console.log(this)
                         return parseFloat(this.point.value).toLocaleString()+"%";
                     }
                 }
@@ -113,7 +120,7 @@ export default {
 // rgba(255,255,255,0)
 </script>
 
-<style>
+<style scoped>
 rect.highcharts-background{
     fill: #000;
 }

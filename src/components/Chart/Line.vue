@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import Highcharts from 'highcharts'
 export default {
   data() {
     return {
