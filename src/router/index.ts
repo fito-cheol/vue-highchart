@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Event from "../views/Event.vue";
+import Juhee100 from "../views/Juhee100.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes: Array<RouteConfig> = [
     path: "/event",
     name: "Event",
     component: Event
+  },
+  {
+    path: "/100",
+    name: "Juhee100",
+    component: Juhee100
   },
 ];
 
