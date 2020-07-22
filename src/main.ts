@@ -11,13 +11,15 @@ import Stock from "highcharts/modules/stock";
 import Pareto from "highcharts/modules/pareto";
 import variablepie from "highcharts/modules/variable-pie";
 import Maps from "highcharts/modules/map";
+import Treemap from "highcharts/modules/treemap";
 import highchartsMore from "highcharts/highcharts-more";
 
 Stock(Highcharts);
-highchartsMore(Highcharts);
 Pareto(Highcharts);
 variablepie(Highcharts);
 Maps(Highcharts);
+Treemap(Highcharts);
+highchartsMore(Highcharts);
 
 Vue.use(HighchartsVue);
 
