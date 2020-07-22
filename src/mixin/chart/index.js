@@ -7,7 +7,7 @@ const chartConfig = {
           width: 800,
           height: 560,
           marginTop: 60,
-          marginLeft: 100,
+          marginLeft: 50,
           marginRight: 50,
           borderRadius: 4,
           shadow: {

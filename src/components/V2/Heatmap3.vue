@@ -28,13 +28,17 @@ export default {
       chartOptions: {
         chart: {
           type: "heatmap",
-          plotBackgroundImage: "https://juhee100bucket.s3.ap-northeast-2.amazonaws.com/court_background_black.png"
+          plotBackgroundImage: "https://juhee100bucket.s3.ap-northeast-2.amazonaws.com/court_background_black.png",
+          marginBottom: 50,
         },
         boost: {
             useGPUTranslations: true
         },
         xAxis: {
           showLastLabel: false,
+          labels: {
+             enabled: false
+          },  
           lineWidth: 0,
           tickLength: 0
         },
@@ -43,7 +47,7 @@ export default {
             text: null
           },
           labels: {
-            format: '{value}:00'
+             enabled: false
           },
         },
         colorAxis: {
@@ -61,6 +65,12 @@ export default {
           labels: {
             format: '{value}'
           }
+        },
+        legend: {
+          enabled: false
+        },
+        tooltip: {
+          enabled: false
         },
         series: [{
           data: [],
@@ -98,16 +108,19 @@ export default {
         },
         xAxis: {
           labels: {
-              align: 'left',
-              x: 5,
-              y: 14,
-              format: '{value:%B}' // long month
+            enabled: false,
+            align: 'left',
+            x: 5,
+            y: 14,
           },
           showLastLabel: false,
           lineWidth: 0,
           tickLength: 0
         },
         yAxis: {
+          labels: {
+             enabled: false
+          },
           title: {
             text: null
           },
@@ -128,6 +141,12 @@ export default {
           labels: {
             format: '{value}'
           }
+        },
+        legend: {
+          enabled: false
+        },
+        tooltip: {
+          enabled: false
         },
         series: [{
           data: [],
