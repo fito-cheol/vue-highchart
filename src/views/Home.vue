@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <v2-spine />
     <v2-scatter />
     <v2-ordered-bar />
     <v2-paired-column />
