@@ -35,19 +35,31 @@ export default {
           data:[
             [0,0],
             [6627, 2503],
-          ]
+          ],
+          dataLabels: { // 참고 http://jsfiddle.net/ys73khx8/
+            enabled: true,
+            formatter: function(){
+              return 'tmp '+ this.x + ", "+ this.y
+            }
+          }
         },
         {
           type: "scatter",
           marker: {
               enabled: true,
               symbol: 'circle',
-              radius: 15
+              radius: 10
           },
           data:[
             [1000,1000],
             [5627, 5503],
-          ]
+          ],
+          dataLabels: { // 참고 http://jsfiddle.net/ys73khx8/
+            enabled: true,
+            formatter: function(){
+              return 'tmp '+ this.x + ", " +this.y
+            }
+          }
         }],
         tooltip: {
           enabled: false
@@ -65,9 +77,15 @@ export default {
           },
           gridLineWidth: 0
         },
+        // tooltip: {
+        //   crosshairs: true,
+        //   shared: true
+        // },
         plotOptions: {
           scatter: {
+            name:'Circle',
             marker: {
+              
               radius: 5,
               states: {
                 hover: {
@@ -86,6 +104,7 @@ export default {
           },
           series: {
             marker: {
+              name:'aaaaaaaaaaa',
               enabled: false,
             },
             states: {
