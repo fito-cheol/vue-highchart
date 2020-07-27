@@ -50,14 +50,34 @@ export default {
               symbol: 'circle',
               radius: 10
           },
-          data:[
-            [1000,1000],
-            [5627, 5503],
+          labelText: "12",
+          data:[{
+            x:1000,
+            y:1000,
+            marker: {
+              radius: 12
+            },
+            labelText: "12",
+          },
+          {
+            x:5627,
+            y:5503,
+            marker: {
+              radius: 10
+            },
+            labelText: "14",
+          }
           ],
-          dataLabels: { // 참고 http://jsfiddle.net/ys73khx8/
+          dataLabels: { // 참고 https://jsfiddle.net/chrisvisokio/52zethbp/
             enabled: true,
+            align: 'center',
+            verticalAlign: 'middle',
             formatter: function(){
-              return 'tmp '+ this.x + ", " +this.y
+              return  this.point.labelText;
+            },
+            style:{
+              fontSize: "11px",
+              textOutline: "none",
             }
           }
         }],
