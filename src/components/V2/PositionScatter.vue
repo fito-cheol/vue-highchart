@@ -1,7 +1,6 @@
 <template>
   <div>
     <highcharts ref="chart" :options="chartOptions"></highcharts>
-    <button @click="newData"> 업데이트 </button>
   </div>
 </template>
 
@@ -13,7 +12,14 @@ import basicChart from "@/mixin/chart/index";
 
 export default {
   mixins: [basicChart, sprint],
-  created() {
+  props:["chartData"],
+  mounted() {
+    this.newData(this.chartData)
+  },
+  watch: {
+    chartData(value){
+      this.newData(value)
+    }
   },
   computed: {},
   data() {
@@ -96,39 +102,8 @@ export default {
     };
   },
   methods: {
-    newData(){
-      let newPoint = [
-        {
-          x:1000,
-          y:1500,
-          labelText: "123"
-        },
-        {
-          x:4627,
-          y:2503,
-          labelText: "987"
-        }
-      ]
-
-      let newData = [
-        {
-          x:1000,
-          y:1500,
-          marker: {
-            radius: 12
-          },
-          labelText: "123",
-        },
-        {
-          x:4627,
-          y:2503,
-          marker: {
-            radius: 10
-          },
-          labelText: "987",
-        }
-      ]
-
+    newData(chartData){
+      console.log("chartData", chartData)
       let newSeries = {
           type: "scatter",
           marker: {
@@ -137,7 +112,7 @@ export default {
               radius: 10
           },
           labelText: "12",
-          data:newData,
+          data:chartData,
           dataLabels: { 
             enabled: true,
             align: 'center',
@@ -152,7 +127,6 @@ export default {
           }
         }
       let chart = this.$refs.chart.chart
-      console.log(chart)
       chart.series[0].update(newSeries, true);
     }
   }
