@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Event from "../views/Event.vue";
 import Juhee100 from "../views/Juhee100.vue";
+import SliderScatter from "../views/SliderScatter.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes: Array<RouteConfig> = [
     path: "/100",
     name: "Juhee100",
     component: Juhee100
+  },
+  {
+    path: "/slider",
+    name: "SliderScatter",
+    component: SliderScatter
   },
 ];
 

@@ -180,7 +180,6 @@ export default {
       this.splitDataIntoSeries();
       // chart 크기를 조정해 주는 기준 점 추가
       this.setStandSize();
-      console.log("dafasdf", this.chartOptions.series, this.chartSeries)
       this.chartOptions.series = [].concat.apply(this.chartOptions.series, this.chartSeries);
     },
     setStandSize: function() {
