@@ -1,9 +1,14 @@
 <template>
-  <div>
-    <div id="slider" ref="slider"></div>
-    <br>
-    <input v-model="minRange" />          
-    <input v-model="maxRange" />
+  <div class='court_tool_wrap' >
+    <div >
+      <input v-model="minRange" class="range-slider_value min_value"  /> 
+    </div>
+    <div class="slider_control">
+      <div id="slider" class="slider_range_button" ref="slider" />
+    </div>
+    <div >
+      <input v-model="maxRange" class="range-slider_value max_value" />          
+    </div>
   </div>
 </template>
 
@@ -59,10 +64,27 @@ export default {
   },
   methods: {
     change_range_time(range_min, range_max){
-      this.$emit("ChangeRange", [range_min, range_max])
+      this.$emit("changeRange", [range_min, range_max])
     }
     
   },
 
 }
 </script>
+<style scoped>
+.court_tool_wrap { 
+  display: flex;
+  flex-direction: row;
+}
+.range-slider_value {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  background: #2f425e;
+  padding: 0px 22px;
+}
+.slider_control{
+  width: 635px; margin: 0 10px;
+}
+</style>
