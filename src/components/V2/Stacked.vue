@@ -29,8 +29,16 @@ export default {
         },
         plotOptions: {
             series: {
-                stacking: 'normal'
-            }
+                stacking: 'normal',
+                // http://jsfiddle.net/highcharts/bwx7bfj6/
+                dataLabels: {
+                    enabled: true,
+                    format: '{y} unit',
+                    inside: true,
+                    color: '#fff',
+                    style: {fontWeight: 'bolder'},
+                }
+            },
         },
         series: [{
             name: 'John',

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <v2-multi-line />
     <range-slider />
     <v2-connected-scatter />
     <v2-tree />

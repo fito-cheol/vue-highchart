@@ -103,7 +103,6 @@ export default {
   },
   methods: {
     newData(chartData){
-      console.log("chartData", chartData)
       let newSeries = {
           type: "scatter",
           marker: {
@@ -117,9 +116,7 @@ export default {
             enabled: true,
             align: 'center',
             verticalAlign: 'middle',
-            formatter: function(){
-              return  this.point.labelText;
-            },
+            
             style:{
               fontSize: "11px",
               textOutline: "none",
