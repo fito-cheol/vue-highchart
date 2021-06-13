@@ -118,6 +118,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 }
+// JIRA issue와 연동 테스트하기
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
