@@ -118,6 +118,7 @@ export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 }
 // JIRA issue와 연동 테스트하기
+// 풀리퀘스트 시에 close 넣고 테스트하기
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
